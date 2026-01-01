@@ -4,7 +4,7 @@ export function InfiniteScroll({ infiniteScrollItemsList = [] }) {
   return (
     <div className="main-container py-10 bg-emerald-300">
       <div className="flex overflow-hidden">
-        <ul className="animate-infinite-scroll flex gap-x-5">
+        <ul className="animate-infinite-scroll flex">
           {[...infiniteScrollItemsList, ...infiniteScrollItemsList].map(
             (item, idx) => {
               const isClone = idx >= infiniteScrollItemsList.length;
@@ -13,7 +13,7 @@ export function InfiniteScroll({ infiniteScrollItemsList = [] }) {
                 <li
                   key={`${item.id}-${idx}`}
                   aria-hidden={isClone}
-                  className="size-60 relative overflow-hidden bg-emerald-400"
+                  className="size-60 relative overflow-hidden bg-emerald-400 mr-5"
                 >
                   <Image
                     src={item.src}
