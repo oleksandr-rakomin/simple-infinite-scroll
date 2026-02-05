@@ -1,6 +1,6 @@
 # Simple infinite scroll
 
-### Low Complexity — ~5 hours
+## Low Complexity — ~5 hours
 
 - Implement the base `InfiniteScroll` component (Next.js + `next/image`)
 - Duplicate items list for seamless loop (`[...list, ...list]`)
@@ -10,9 +10,7 @@
   - Hide cloned items from assistive tech (`aria-hidden` on clones)
   - Ensure meaningful `alt` text for each logo (or empty alt if decorative)
 
----
-
-### Medium Complexity — ~10 hours
+## Medium Complexity — ~10 hours
 
 - Motion accessibility:
   - Respect `prefers-reduced-motion` (e.g., `motion-reduce:animate-none` + CSS fallback)
@@ -26,9 +24,7 @@
   - Control duration/speed via prop (e.g., `durationMs` or CSS var)
   - Allow optional sizing (`itemSize`) and background overrides
 
----
-
-### High Complexity — ~22 hours
+## High Complexity — ~22 hours
 
 - Robust, production-ready marquee behavior:
   - Dynamic duration based on content width (consistent perceived speed)
